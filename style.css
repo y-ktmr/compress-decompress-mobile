@@ -181,6 +181,7 @@ main {
 }
 .date-picker-wrapper input {
   padding-right: var(--spacing-7);
+  text-align: left;
 }
 .date-picker-wrapper input::-webkit-calendar-picker-indicator {
   opacity: 0;
