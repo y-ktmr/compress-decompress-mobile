@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>圧縮と展開</title>
+  <meta name="description" content="他者の制作物から引用した言葉集">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+  <header>
+    <p>圧縮と展開</p>
+  </header>
+
+  <!-- ログイン画面 -->
+  <div id="login-screen">
+    <form id="login-form">
+      <div id="login-fields-group">
+        <h2>ログイン</h2>
+        <div id="login-fields"></div>
+      </div>
+      <button type="submit" class="btn btn-primary">ログイン</button>
+      <p id="login-error"></p>
+    </form>
+  </div>
+
+  <!-- メインコンテンツ（追加フォーム） -->
+  <main id="add-screen" style="display: none;">
+    <div id="add-form-container"></div>
+  </main>
+
+  <!-- 追加完了ダイアログ -->
+  <div id="success-dialog" class="modal" style="display: none;">
+    <div class="modal-content">
+      <div id="success-preview"></div>
+    </div>
+    <div class="modal-buttons">
+      <a id="success-close" class="text-link">続けて追加する</a>
+    </div>
+  </div>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
